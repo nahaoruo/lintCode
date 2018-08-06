@@ -15,7 +15,17 @@
         .state('world', {
           url: '/world',
           templateUrl: 'world.html'
-        });
+        })
+        .state('detail',{
+          url: '/detail',
+          templateUrl: 'detail.html',
+          controller:'detailCtrl'
+        })
+        .state('welcome',{
+          url: '/welcome',
+          templateUrl:'welcome.html'
+        })
+      ;
         // .state('world.world1', {//表示world1是依赖于world的，同时ui-sref也要加.,world1的内容会在world的template中显示
         //   url: '/world/world-1',
         //   template: '<h3>This is a World 1</h3>'

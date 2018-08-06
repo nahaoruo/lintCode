@@ -1,7 +1,7 @@
 <div id="menuWrapper">
   <div id="menuScroller">
-    <div ng-repeat="menuItem in menuList" ng-click="jumpTo(menuItem.unique_name)" class="menuItem">
-    {{menuItem.title}}
+    <div ng-repeat="menuItem in menuList" ng-click="jumpTo(menuItem.unique_name)" class="menuItem" ng-controller="menuCtrl">
+    {{menuItem}}
     </div>
   </div>
 </div>
